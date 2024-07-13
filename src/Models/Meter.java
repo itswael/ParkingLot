@@ -1,28 +1,20 @@
 package Models;
 
 import java.sql.Time;
+import java.util.Date;
 
-public class Meter {
-    private int ID;
-    private double unitCost;
+public class Meter extends BaseEntity{
+    private int unitConsumed;
     private double pricePerUnit;
-    private Time startTime;
-    private Time EndTime;
+    private Date startTime;
+    private Date EndTime;
 
-    public int getID() {
-        return ID;
+    public int getUnitConsumed() {
+        return unitConsumed;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public double getUnitCost() {
-        return unitCost;
-    }
-
-    public void setUnitCost(double unitCost) {
-        this.unitCost = unitCost;
+    public void setUnitConsumed(int unitConsumed) {
+        this.unitConsumed = unitConsumed;
     }
 
     public double getPricePerUnit() {
@@ -33,19 +25,19 @@ public class Meter {
         this.pricePerUnit = pricePerUnit;
     }
 
-    public Time getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Time startTime) {
+    public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 
-    public Time getEndTime() {
+    public Date getEndTime() {
         return EndTime;
     }
 
-    public void setEndTime(Time endTime) {
+    public void setEndTime(Date endTime) {
         EndTime = endTime;
     }
 }

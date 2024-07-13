@@ -1,16 +1,8 @@
 package Models;
 
-public class Operator {
-    private int ID;
+public class Operator extends BaseEntity{
+
     private String name;
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 
     public String getName() {
         return name;

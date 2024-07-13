@@ -1,26 +1,17 @@
 package Models;
 
-public class Gate {
-    private int ID;
-    private int gateNo;
+public class Gate extends BaseEntity{
+    private int gateNumber;
     private Operator Operator;
     private GateType type;
     private GateStatus status;
 
-    public int getID() {
-        return ID;
+    public int getGateNumber() {
+        return gateNumber;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public int getGateNo() {
-        return gateNo;
-    }
-
-    public void setGateNo(int gateNo) {
-        this.gateNo = gateNo;
+    public void setGateNumber(int gateNumber) {
+        this.gateNumber = gateNumber;
     }
 
     public Models.Operator getOperator() {

@@ -1,40 +1,42 @@
 package Models;
 
-public class ParkingSpot {
-    private int ID;
-    private VehicleType vehicleType;
-    private SpotStatus spotStatus;
-    private Floor floor;
+import java.util.List;
 
-    public int getID() {
-        return ID;
+public class ParkingSpot extends BaseEntity{
+    private List<VehicleType> supportedVehicleType;
+    private ParkingSpotStatus parkingSpotStatus;
+    private ParkingFloor parkingFloor;
+    private int number;
+
+    public List<VehicleType> getSupportedVehicleType() {
+        return supportedVehicleType;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setSupportedVehicleType(List<VehicleType> supportedVehicleType) {
+        this.supportedVehicleType = supportedVehicleType;
     }
 
-    public VehicleType getVehicleType() {
-        return vehicleType;
+    public ParkingSpotStatus getParkingSpotStatus() {
+        return parkingSpotStatus;
     }
 
-    public void setVehicleType(VehicleType vehicleType) {
-        this.vehicleType = vehicleType;
+    public void setParkingSpotStatus(ParkingSpotStatus parkingSpotStatus) {
+        this.parkingSpotStatus = parkingSpotStatus;
     }
 
-    public SpotStatus getSpotStatus() {
-        return spotStatus;
+    public ParkingFloor getParkingFloor() {
+        return parkingFloor;
     }
 
-    public void setSpotStatus(SpotStatus spotStatus) {
-        this.spotStatus = spotStatus;
+    public void setParkingFloor(ParkingFloor parkingFloor) {
+        this.parkingFloor = parkingFloor;
     }
 
-    public Floor getFloor() {
-        return floor;
+    public int getNumber() {
+        return number;
     }
 
-    public void setFloor(Floor floor) {
-        this.floor = floor;
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
