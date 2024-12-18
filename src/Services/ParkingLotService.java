@@ -9,7 +9,7 @@ import Strategy.SpotAssignmentStrategy;
 import java.util.List;
 
 public class ParkingLotService {
-    private SpotAssignmentStrategy spotAssignmentStrategy;
+    private final SpotAssignmentStrategy spotAssignmentStrategy;
     private ParkingLotRepository parkingLotRepository;
 
     public ParkingLotService(SpotAssignmentStrategy spotAssignmentStrategy){
