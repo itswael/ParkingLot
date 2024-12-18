@@ -22,7 +22,7 @@ public class ParkingLot extends BaseEntity{
         return parkingLotstatus;
     }
 
-    public void setParkingLotstatus(ParkingLotstatus parkingLotstatus) {
+    public void setParkingLotStatus(ParkingLotstatus parkingLotstatus) {
         this.parkingLotstatus = parkingLotstatus;
     }
 

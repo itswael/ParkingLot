@@ -1,7 +1,7 @@
 package Models;
 
 public enum ParkingSpotStatus {
-    OPEN,
-    CLOSE,
-    FULL;
+    AVAILABLE,
+    OCCUPIED,
+    OUTOFSERVICE
 }
